@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jeopardy</title>
+  <link href="https://fonts.googleapis.com/css?family=Copse&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="jeopardy.css">
+</head>
+<body>
+  <div class="app">
+
+      <header class="top-header">
+            
+      </header>
+      
+            <div class="board">
+            </div>
+      
+            <div class="card-modal">
+            <div class=card-modal-inner>
+                  <h2 class="clue-text"></h2>
+                  <form autocomplete="off">
+                  <input name="user-answer" type="text" />
+                  <button type="submit">Answer</button>
+                  </form>
+                  <div class="result">
+                  <p class="result_success">CORRECT</p>
+                  <p class="result_fail">INCORRECT</p>
+                  <p class="result_correct-answer">
+                        The correct answer is <span class="result_correct-answer-text"></span>
+                  </p>
+                  </div>
+            </div>
+            </div>
+  </div>
+
+<script src="https://unpkg.com/jquery"></script>
+<script src="https://unpkg.com/axios/dist/axios.js"></script>
+<script src="https://unpkg.com/lodash"></script>
+<script src="jeopardy.js"></script>
+
+</body>
+</html>
